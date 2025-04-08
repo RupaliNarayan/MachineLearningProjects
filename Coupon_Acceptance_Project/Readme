@@ -1,0 +1,73 @@
+# 🧠 Coupon Acceptance Prediction
+
+Predicting whether a user will accept a coupon during their e-commerce journey, based on demographic and behavioral features.
+
+## 🚀 Problem Statement
+
+In today's competitive e-commerce landscape, blindly offering coupons can lead to wasted marketing efforts. This project aims to build a classification model to **predict whether a user will accept a coupon**, thereby helping platforms personalize offers and improve promotional effectiveness.
+
+---
+
+## 📊 Dataset & Features
+
+The dataset includes user demographics (e.g., age, income), travel patterns, and contextual features such as:
+
+- Destination and direction info
+- Time of day
+- Occupation and education
+- Income level
+
+---
+
+## 🔧 Process Overview
+
+### 1. Data Preprocessing
+- Removed duplicates, handled missing values.
+- Dropped columns with high null rates or low information.
+- Performed one-hot encoding on categorical features.
+
+### 2. Exploratory Data Analysis (EDA)
+- Used **countplots** to explore categorical distributions.
+- Analyzed **correlations** to remove redundant features like `direction_same` and `direction_opp`.
+
+![Distribution Plots](images/distribution_plot.png)
+![Correlation Analysis](images/correlation_analysis.png)
+
+### 3. Model Building
+Tested multiple ML models using `scikit-learn`:
+- Logistic Regression
+- Random Forest
+- Naive Bayes
+- Decision Tree
+- K-Nearest Neighbors
+
+### 4. Evaluation
+- Logistic Regression achieved the best performance with **~68.7% test accuracy**.
+- Evaluated using precision, recall, F1-score, and confusion matrix.
+
+---
+
+## 📈 Results
+
+- The model effectively classifies potential coupon accepters, improving marketing targeting.
+- Helps reduce cost on promotions by focusing on high-likelihood users.
+
+---
+
+## 💼 Tools Used
+
+- Python (pandas, matplotlib, seaborn, scikit-learn)
+- Jupyter Notebook
+- PowerPoint (for presentation visuals)
+
+---
+
+## 📌 Conclusion
+
+This project supports data-driven decision-making for personalized promotions in e-commerce. The approach is scalable and adaptable for various user-behavior datasets.
+
+---
+
+## 🙏 Acknowledgments
+
+Thanks to open-source contributors and dataset providers that made this project possible.
